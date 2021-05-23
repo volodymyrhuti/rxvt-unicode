@@ -471,6 +471,7 @@ rxvt_font_default::draw (rxvt_drawable &d, int x, int y,
       else
         switch (t)
           {
+            case ' ':
             case '\t':
             case ZERO_WIDTH_CHAR:
             case NOCHAR:
@@ -1026,8 +1027,10 @@ rxvt_font_x11::has_char (unicode_t unicode, const rxvt_fontprop *prop, bool &car
 
   careful = xcs->lbearing < 0 || xcs->rbearing > prop->width * wcw;
 
+#if !ENABLE_WIDE_GLYPHS
   if (careful && !OVERLAP_OK (w, wcw, prop))
     return false;
+#endif
 
   return true;
 }
@@ -1345,12 +1348,14 @@ rxvt_font_xft::has_char (unicode_t unicode, const rxvt_fontprop *prop, bool &car
 
   careful = g.x > 0 || w > prop->width * wcw;
 
+#if !ENABLE_WIDE_GLYPHS
   if (careful && !OVERLAP_OK (w, wcw, prop))
     return false;
 
   // this weeds out _totally_ broken fonts, or glyphs
   if (!OVERLAP_OK (g.xOff, wcw, prop))
     return false;
+#endif
 
   return true;
 }
@@ -1395,6 +1400,10 @@ rxvt_font_xft::draw (rxvt_drawable &d, int x, int y,
 
           ep->glyph = glyph;
           ep->x = x_ + (cwidth - extents.xOff >> 1);
+#if ENABLE_WIDE_GLYPHS
+          /* Left-align to bounding box, do not overlap to the left. */
+          max_it(ep->x, x_);
+#endif
           ep->y = y_ + ascent;
 
           if (extents.xOff == 0)

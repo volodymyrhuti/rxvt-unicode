@@ -31,6 +31,7 @@ configure  \
         --enable-xim \
         --enable-perl \
         --enable-text-blink \
-        --enable-xterm-scroll
+        --enable-xterm-scroll \
+        --enable-wide-glyphs
 make
 echo "TODO: sudo make install"
