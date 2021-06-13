@@ -1,0 +1,39 @@
+# pack-refs with: peeled fully-peeled sorted 
+71b64b4396718a98441e703dbc231592c46748ab refs/remotes/origin/master
+19fe2dd998f0adfd6312795bad2ae407652d081c refs/remotes/origin/pristine-tar
+c97ba4d22a0f3f566165a4c7a4e38e60a6d073ea refs/remotes/origin/upstream
+f91d260a339c62a3a54a7e66b07a23dbe6d4d34b refs/tags/debian/1%4.11-1
+d6012bcca5400a86b0ed99f95e83cff03e926cae refs/tags/debian/1%4.15-1
+^f85f4f5a55c1d51844da0581a60dcba13e09cdff
+c168b80334444ba5afff8d27b377f724fa29c00a refs/tags/debian/1%4.15-2
+^67ea0f66b9ca9442a79e78b46471fe6c11b4a70a
+cfa9b6fd5ed7dbb533fed070e6ebb0271ba34a0f refs/tags/debian/1%4.15-3
+^5ff7cbf2d63f643fcec09fbeeb6986fe2d1da016
+1b1f185ac5d64ebb2aa38a10b6d03f30763e659c refs/tags/debian/1%4.22-1
+^f368a79f301ad0f054d5539394cd5a359df3a023
+85d156f0ff8fe3a4b36b0ff410eca13935f1abbf refs/tags/debian/1%4.22-1.1
+42813560f22df5d6c6e0a15eb6f291ca41e8dedd refs/tags/debian/1%4.25-1
+2755eef44a64799f46959f08d3ad38914d161812 refs/tags/debian/1%4.27-1
+beb03dcb6fafc78cd5eb3d040c27c17c328c8a2b refs/tags/debian/1%4.27-1_exp1
+361f3f62b4f06927f289ac9dc27831635fc04609 refs/tags/debian/1%4.31-1
+71b64b4396718a98441e703dbc231592c46748ab refs/tags/debian/1%4.33-1
+017f3f2ab0a0bbe27e3fd31f9917c7d65c00b34e refs/tags/debian/3.9-1
+^ab3b26594945665cf92ae654f51cb4bb7c220718
+68216d71220c68538d06dd2e5201ff06684eb476 refs/tags/upstream/3.9
+^eb9c98ca4a4b752e0f403924d64ab8d63e878184
+c62d42711dd3781cf72b17ebf2a79a8d05f19677 refs/tags/upstream/4.04
+^e220c42a167131b8b26ae9ef488ef142202a0fb9
+cfcd6d8e27bc757f2d14d85fe85792468ff348f6 refs/tags/upstream/4.11
+^c086611f8c6d294909b7afb6eb317ca7736d5808
+e80da562cd3fa58658988a9a4c3da7a7430185fb refs/tags/upstream/4.15
+^539cc91c71aec727249bfc7dcdaca29af4f2c104
+b79c21c66ffdba0470b317417a091386f9dcbd7a refs/tags/upstream/4.22
+^57ca06b74c5c10950a8bb38a51150320beab1a6a
+ac2923f7cfd368e056d7f4930353f05a7ccfe225 refs/tags/upstream/4.25
+^76532f0731884c557206efa7e09ae7343bcadc9d
+c0cf6f31b0479b3c9adcbe4a7438392db07676ec refs/tags/upstream/4.27
+^01e5e2eafc8bbaef8d58358f0bd98d056e834514
+77997e41a8402de41dbf7980fbd23bf9e97aa54c refs/tags/upstream/4.31
+^1513c5f016d11dc63248da10aa30e8a10cf2be08
+264dbb4f1877c3f4254d91e724363402ed28a26a refs/tags/upstream/4.33
+^c97ba4d22a0f3f566165a4c7a4e38e60a6d073ea
